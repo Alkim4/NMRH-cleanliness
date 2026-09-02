@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", serif;
+  --font-body: "Inter", sans-serif;
+
+  --color-ink: #14251a;
+  --color-moss: #1f6b3b;
+  --color-moss-dark: #123f22;
+  --color-meadow: #4caf66;
+  --color-paper: #f1f3ea;
+  --color-paper-line: #d8dcc9;
+  --color-brick: #a83a30;
+  --color-brick-light: #f3e3e0;
+  --color-meadow-light: #e2efe2;
+}
+
+html {
+  background: var(--color-paper);
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background: var(--color-paper);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Rubber-stamp effect for PASS / FAIL */
+.stamp {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 3px solid currentColor;
+  border-radius: 4px;
+  padding: 0.15rem 0.7rem;
+  transform: rotate(-4deg);
+  opacity: 0.92;
+}
+
+table.ledger {
+  border-collapse: collapse;
+  width: 100%;
+}
+table.ledger th, table.ledger td {
+  border-bottom: 1px solid var(--color-paper-line);
+}
