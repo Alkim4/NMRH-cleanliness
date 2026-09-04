@@ -24,8 +24,8 @@ export default function RoomHistory({ room, sessions }) {
         {history.length === 0 ? (
           <p className="text-sm text-ink/60">No grading rounds recorded yet.</p>
         ) : (
-          <div className="ledger-card">
-            <table className="ledger text-sm">
+          <div className="ledger-card overflow-x-auto">
+            <table className="ledger text-sm min-w-[480px]">
               <thead>
                 <tr className="text-left text-xs uppercase tracking-wide">
                   <th>Cycle</th>
@@ -63,8 +63,8 @@ export default function RoomHistory({ room, sessions }) {
         {monthly.length === 0 ? (
           <p className="text-sm text-ink/60">No completed cycles yet this term.</p>
         ) : (
-          <div className="ledger-card">
-            <table className="ledger text-sm">
+          <div className="ledger-card overflow-x-auto">
+            <table className="ledger text-sm min-w-[380px]">
               <thead>
                 <tr className="text-left text-xs uppercase tracking-wide">
                   <th>Month</th>
@@ -91,13 +91,13 @@ export default function RoomHistory({ room, sessions }) {
       <section>
         <h2 className="font-display text-xl text-moss-dark mb-3">Grading round history</h2>
         <p className="text-xs text-ink/50 -mt-2 mb-3">
-          Full breakdown by criteria, so it's easy to see what needs work.
+          Full breakdown by criteria, so it's easy to see what needs work. Swipe sideways to see all columns.
         </p>
         {roomSessions.length === 0 ? (
           <p className="text-sm text-ink/60">No individual scores recorded yet.</p>
         ) : (
           <div className="ledger-card overflow-x-auto">
-            <table className="ledger text-sm min-w-[640px]">
+            <table className="ledger text-sm min-w-[720px]">
               <thead>
                 <tr className="text-left text-xs uppercase tracking-wide">
                   <th>Date</th>
