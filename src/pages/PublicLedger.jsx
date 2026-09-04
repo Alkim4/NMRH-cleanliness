@@ -7,6 +7,7 @@ export default function PublicLedger() {
 
   return (
     <div className="min-h-screen pb-16">
+      <Masthead />
       <main className="max-w-5xl mx-auto px-5 sm:px-8 py-8">
         <h1 className="font-display text-2xl text-moss-dark mb-1">This month's rooms</h1>
         <p className="text-sm text-ink/50 mb-6">Tap a room to see its full grading history.</p>
