@@ -7,7 +7,7 @@ export default function Masthead({ subtitle }) {
   return (
     <header className="relative overflow-hidden h-40 sm:h-48">
       <img
-        src="/nmrh-hero.jpg"
+        src="./nmrh-hero.jpg"
         alt=""
         className="absolute inset-0 w-full h-full object-cover object-top"
       />
@@ -16,7 +16,7 @@ export default function Masthead({ subtitle }) {
       <div className="relative h-full max-w-5xl mx-auto px-5 sm:px-8 flex items-center justify-between gap-4">
         <Link to="/" className="flex items-center gap-3">
           <div className="bg-white rounded-full w-20 h-20 sm:w-24 sm:h-24 shrink-0 flex items-center justify-center shadow-sm p-2 overflow-hidden">
-            <img src="/nmrh-logo.jpg" alt="NMRH" className="w-full h-full object-contain" />
+            <img src="./nmrh-logo.jpg" alt="NMRH" className="w-full h-full object-contain" />
           </div>
           <p className="font-display italic text-paper text-sm sm:text-base tracking-wide drop-shadow-sm">
             {subtitle || 'Room Cleanliness Ledger'}
